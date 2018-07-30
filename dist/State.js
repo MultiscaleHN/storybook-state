@@ -46,7 +46,7 @@ var State = function (_Component) {
     State.prototype.render = function render() {
         var state = this.props.parseState ? this.props.parseState(this.state) : this.state;
 
-        return (0, _react.cloneElement)(this.props.children, state);
+        return _react.cloneElement(this.props.children, state);
     };
 
     return State;
